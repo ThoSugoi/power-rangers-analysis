@@ -1,5 +1,5 @@
 # power-rangers-analysis
-The dataset for this project comes from Kaggle's Power Rangers Dataset.
+The dataset for this project comes from Kaggle's Power Rangers Dataset. [Collected by ]([https://www.kaggle.com/datasets/karetnikovn/power-rangers-dataset/data](https://github.com/rfordatascience/tidytuesday/tree/main/data/2024/2024-08-27)!
 
 ## 1. Dataset Description
 
