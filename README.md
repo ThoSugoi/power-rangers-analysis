@@ -52,16 +52,7 @@ The Power Rangers franchise has a rich history spanning over 25 seasons and more
 - **Insights & Conclusion:**  
   Identify key findings about the most popular seasons and season longevity, and provide interpretations on viewer preferences and trends over the years.
 
-## 5. Potential External Data Sources
 
-- **IMDb API or External Rating Sources:**  
-  To supplement user ratings and reviews.
-- **Viewer Engagement Metrics:**  
-  From streaming platforms (if available).
-- **Merchandise Sales Data:**  
-  To compare season popularity through additional cultural impact measures.
-
----
 
 This project will provide an engaging and insightful look into the Power Rangers franchise's reception over the years by combining data analysis with rich visualizations. It will highlight trends in season popularity, episode performance, and even delve into narrative aspects through text analysis.
 
