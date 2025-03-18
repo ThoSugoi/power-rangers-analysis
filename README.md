@@ -4,7 +4,7 @@ The dataset for this project comes from [Kaggle's Power Rangers Dataset](https:/
 
 ## 1. Dataset Description
 
-The dataset for this project comes from Kaggle's Power Rangers Dataset, which includes information about the episodes and seasons of the Power Rangers franchise. The dataset consists of two main files:
+The dataset consists of two main files:
 
 - **power_rangers_episodes.csv**: Contains details about individual episodes, such as episode title, season title, air date, IMDb rating, and total votes.
 - **power_rangers_seasons.csv**: Contains details about each season, including season title, season number, number of episodes, air dates, producer, and average IMDb rating.
