@@ -17,7 +17,7 @@ The Power Rangers franchise has a rich history spanning over 25 seasons and more
 
 ## 3. Questions to Answer
 
-### **Question 1: What factors influence a season's popularity?**
+### **Question 1: How do season duration and other attributes impact a show's popularity and audience reception?**
 
 - **Why:** Instead of merely identifying the highest-rated seasons, we aim to analyze **what contributes to a season’s popularity** beyond simple IMDb rankings.
 - **Plan:**
@@ -25,6 +25,7 @@ The Power Rangers franchise has a rich history spanning over 25 seasons and more
   - Analyze IMDb ratings in relation to:
     - **Total votes** (to distinguish widely watched seasons from niche favorites).
     - **Number of episodes** (to explore whether longer seasons tend to receive higher or lower ratings).
+    - **Season duration** (to determine if longer seasons are generally better received).
     - **Gaps between seasons** (to examine if long breaks affect audience interest and reception).
   - Visualize insights using bar charts, scatter plots, and time-series analysis.
 
@@ -36,14 +37,6 @@ The Power Rangers franchise has a rich history spanning over 25 seasons and more
   - Perform text analysis on **episode descriptions (`desc`)** to identify frequently mentioned characters.
   - Compare character prominence across seasons and investigate whether popular characters correlate with higher ratings.
   - Visualize character trends using word clouds and frequency plots.
-
-### **Question 3: How does season duration impact audience reception?**
-
-- **Why:** Some seasons run longer than others, and we want to explore whether season length correlates with audience reception.
-- **Plan:**
-  - Use the `power_rangers_seasons.csv` dataset.
-  - Calculate season duration using the difference between `air_date_first_ep` and `air_date_last_ep`.
-  - Compare season length to IMDb ratings and total votes to determine if longer seasons are generally better received.
 
 ## 4. Plan for Answering the Questions
 
