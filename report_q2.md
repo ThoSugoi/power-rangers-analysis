@@ -13,8 +13,8 @@ To answer this, we used the `power_rangers_episodes.csv` dataset. This file cont
 We applied basic **text analysis** to the `desc` field to identify character names mentioned in each episode. We then calculated:
 
 - **Total number of mentions** for each character across all episodes (to see who appears the most).
-- **Average IMDb rating** of the episodes each character appeared in (to gauge quality).
 - **Most mentioned character per season**, to highlight changing popularity over time.
+- **Average IMDb rating** of the episodes each character appeared in (to gauge quality).
 
 To visualize our findings, we used:
 
