@@ -110,7 +110,8 @@ plt.tight_layout()
 plt.show()
 
 ```
-<img width="922" src="q1_output.png" />
+![q1_output](https://github.com/user-attachments/assets/b996b163-988c-4f76-9791-3cbe407d4c12)
+
 
 **Code Block 2: Season duration's affect on viewer engagement**
 ```python
@@ -149,7 +150,8 @@ plt.tight_layout()
 plt.show()
 
 ```
-<img width="922" src="q2_output.png" />
+![q2_output](https://github.com/user-attachments/assets/e3278703-ffe3-4001-a706-f331e430468f)
+
 
 ### Discussion
 
