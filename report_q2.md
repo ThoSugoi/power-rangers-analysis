@@ -1,8 +1,8 @@
-## Question 2: Who Carries the Franchise? A Look into Character Prominence and Ratings
+## Question 2: Which characters were the most prominent across seasons?
 
 ### Introduction
 
-The Power Rangers franchise is often discussed online with passionate fan takes—claims like “Tommy carries the franchise” or “Rita drove the engagement” frequently appear in fan forums and videos. We wanted to explore whether these assumptions hold up under data scrutiny. Specifically, we asked: **Which characters appear most frequently throughout the series?** And more importantly, **do these characters appear in highly rated episodes?**
+The Power Rangers franchise is often discussed online with passionate fan takes - claims like “Tommy carries the franchise” or “Rita drove the engagement” frequently appear in fan forums and videos. We wanted to explore whether these assumptions hold up under data scrutiny. Specifically, we asked: **Which characters appear most frequently throughout the series?** And more importantly, **do these characters appear in highly rated episodes?**
 
 To answer this, we used the `power_rangers_episodes.csv` dataset. This file contains episode-level data including descriptions (`desc`), IMDb ratings, total votes, and air dates. We used `desc` for character extraction and combined it with rating information to assess audience reception.
 
