@@ -20,7 +20,7 @@ To visualize our findings, we used:
 
 1. **Word Cloud** (for character mentions): Helps emphasize character prominence by frequency. Larger words = more mentions.
 2. **Table of Top Mentioned Character in Each Season**: Provides a quick overview of which character stood out most per season, offering season-specific insight into character focus.
-3. **Bar Plot with Color Mapping** (Top 10 characters by average IMDb rating): Useful for comparing quality scores visually, highlighting the contrast between frequency and audience appreciation.
+3. **Bar Chart** (Top 10 characters by average IMDb rating): Useful for comparing quality scores visually.
 
 ---
 
