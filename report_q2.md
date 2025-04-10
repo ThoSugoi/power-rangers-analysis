@@ -19,7 +19,8 @@ We applied basic **text analysis** to the `desc` field to identify character nam
 To visualize our findings, we used:
 
 1. **Word Cloud** (for character mentions): Helps emphasize character prominence by frequency. Larger words = more mentions.
-2. **Bar Plot with Color Mapping** (Top 10 characters by average IMDb rating): Useful for comparing quality scores visually, highlighting the contrast between frequency and audience appreciation.
+2. **Table of Top Mentioned Character in Each Season**: Provides a quick overview of which character stood out most per season, offering season-specific insight into character focus.
+3. **Bar Plot with Color Mapping** (Top 10 characters by average IMDb rating): Useful for comparing quality scores visually, highlighting the contrast between frequency and audience appreciation.
 
 ---
 
@@ -60,9 +61,10 @@ for season, group in episodes_df.groupby("season_title"):
         top_char = word_counter.most_common(1)[0][0]
         season_top_chars.append((season, top_char))
 
-season_char_df = pd.DataFrame(season_top_chars, columns=["season_title", "Most Common Character"])
+season_char_df = pd.DataFrame(season_top_chars, columns=["season", "Most Common Character"])
 ```
-<img width="315" alt="Screenshot 2025-04-02 at 21 07 41" src="https://github.com/user-attachments/assets/8680664f-4e36-4e5e-a612-bd451519790f" />
+<img width="401" alt="Screenshot 2025-04-02 at 21 07 36" src="https://github.com/user-attachments/assets/f4bc17c4-f8de-4e99-a3c2-9b737a1c49a1" />
+
 
 **Top popular characters based on IMDB rating**
 ```python
@@ -72,8 +74,8 @@ character_ratings = merged_df.groupby("Most Common Character")["IMDB_rating"].me
 
 # Bar chart: Top characters by average IMDb rating
 sns.barplot(data=character_ratings.sort_values("IMDB_rating", ascending=False).head(10),
-            x="IMDB_rating", y="Most Common Character", palette="viridis")
-plt.title("Top 10 Characters by Season IMDb Ratings")
+            x="Average IMDb Rating", y="Character", palette="viridis")
+plt.title("Top 10 Most Popular Characters Based on Season IMDb Ratings")
 plt.show()
 ```
 <img width="922" alt="Screenshot 2025-04-02 at 21 07 48" src="https://github.com/user-attachments/assets/1a7495d9-09b7-4a01-bd03-f1c4089b0153" />
@@ -84,4 +86,4 @@ The **word cloud** highlights frequently mentioned characters such as **Tommy**,
 
 When looking at the **most mentioned character per season**, however, the data shows a different focus. Generic mentions like **“Rangers”** dominate many seasons, especially those with strong ensemble casts. But unique names such as **Andros** (*In Space*), **Wes** (*Time Force*), and **Evox** (*Beast Morphers*) indicate seasons where individual characters were more central to the narrative. The **IMDb rating-based character chart** reveals yet another angle. Characters like **Andros**, **Wes**, and **Terra Venture** are associated with the **highest-rated seasons**, despite not being the most frequently mentioned. This implies that critical acclaim is more closely tied to compelling storytelling and character arcs than to mere frequency of appearance.
 
-In summary, while **Tommy’s** recurring presence across multiple seasons solidifies his iconic status—earning him the reputation as the *"carrier"* of the franchise—other characters make a lasting impact through **strong, single-season arcs** that resonate with audiences and critics alike. These insights highlight that while **visibility and nostalgia fuel popularity**, it is **compelling storytelling and character depth** that often lead to **critical acclaim**.
+In summary, while **Tommy’s** recurring presence across multiple seasons solidifies his iconic status—earning him the reputation as the *"carrier"* of the franchise - other characters make a lasting impact through **strong, single-season arcs** that resonate with audiences and critics alike. These insights highlight that while **visibility and nostalgia fuel popularity**, it is **compelling storytelling and character depth** that often lead to **critical acclaim**.
